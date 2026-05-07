@@ -1,14 +1,39 @@
-document-addEventListener("DOMContentLoaded",( )=>{
-constgallery= document.getElementById("gallery"); constbox= document.querySelector("-box");
-constcolorButton= document.getElementById("changeColor"); consttoggleButton= document.getElementById("toggleImage");
-colorButton.addEventListener("click",( )=>{ box.style. backgroundColor =
-box.style.backgroundColor==="blue"?"red":"blue";/ /shouldbe'box',not'bx' });
-lettoggled= false;
-toggleButton.addEventListener ("click", ( ) →> { i f(toggled){
-gallery. s r c = "-/assets/images/image1.png";
-toggled= false;
-}else{
-gallery.src="-/assets/images/pumpkin.png";/ /wrongfilename toggled= true;
-});
-console. log ("Page loaded!");
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debugging Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Broken Webpage</h1>
+  </header>
+ 
+ 
+  <main>
+    <section class="content">
+      <h2>Gallery</h2>
+      <img id="gallery" src="./assets/image1.jpg" alt="Sample Image" />
+    </section>
+ 
+ 
+    <section class="buttons">
+      <button id="changeColor">Change Box Color</button>
+      <button id="toggleImage">Toggle Image</button>
+    </section>
+ 
+ 
+    <div class="box"></div>
+  </main>
+ 
+ 
+  <footer>
+    <p>© 2025 Debug Co</p>
+  </footer>
+ 
+ 
+  <script src="script.js"></script>
+</body>
+</html>
