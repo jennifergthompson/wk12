@@ -1,1 +1,14 @@
-
+document-addEventListener("DOMContentLoaded",( )=>{
+constgallery= document.getElementById("gallery"); constbox= document.querySelector("-box");
+constcolorButton= document.getElementById("changeColor"); consttoggleButton= document.getElementById("toggleImage");
+colorButton.addEventListener("click",( )=>{ box.style. backgroundColor =
+box.style.backgroundColor==="blue"?"red":"blue";/ /shouldbe'box',not'bx' });
+lettoggled= false;
+toggleButton.addEventListener ("click", ( ) →> { i f(toggled){
+gallery. s r c = "-/assets/images/image1.png";
+toggled= false;
+}else{
+gallery.src="-/assets/images/pumpkin.png";/ /wrongfilename toggled= true;
+});
+console. log ("Page loaded!");
+});
